@@ -12,6 +12,11 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  get_it: ^7.2.0
+  audio_video_progress_bar: ^0.10.0
+  just_audio: ^0.9.20
+
+
 
 
   cupertino_icons: ^1.0.2
@@ -19,12 +24,14 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  get_it: ^7.2.0
+    
+
 
 
   flutter_lints: ^1.0.0
 
 flutter:
-
+  assets:
+    - assets/music.png
 
   uses-material-design: true

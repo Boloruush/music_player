@@ -6,4 +6,9 @@ import 'package:music_player/service_locator.dart';
 class HomeScreenManager {
   final songListNotifier = ValueNotifier<List<String>>([]);
   final songApi = getIt<SongApi>();
+
+  void updateSongs() async {
+    final songs = await songApi.getSongs();
+    songListNotifier.value = songs;
+  }
 }
